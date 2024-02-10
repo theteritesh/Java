@@ -6,5 +6,6 @@ public class InputePractice3 {
         System.out.println("Enter Number : ");
         int num=sc.nextInt();
         System.out.println(num);
+        sc.close();
     }
 }

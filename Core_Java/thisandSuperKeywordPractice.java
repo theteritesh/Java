@@ -22,7 +22,7 @@ class B extends A{
 }
 public class thisandSuperKeywordPractice{
     public static void main(String[] args) {
-        B Obj = new B(6);
+        new B(6);
         // B Obj1 = new B();
 
     }

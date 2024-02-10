@@ -9,6 +9,6 @@ public class ConditionalStatement{
         }else{
             System.out.println("Childe");
         }
-
+        sc.close();
     }
 }

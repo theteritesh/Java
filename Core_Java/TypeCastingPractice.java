@@ -12,8 +12,8 @@ class B{
 public class TypeCastingPractice{
     public static void main(String[] args) {
 
-        A obj1 =new B();  //upcasting
-        obj1.show1();
+        B obj1 =new B();  //upcasting
+        obj1.show2();
 
         B obj2=(B)obj1; //downcasting
         obj2.show2();

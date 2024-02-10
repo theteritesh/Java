@@ -50,5 +50,6 @@ public class ClassPractice{
                     break;
             }
         }while(a);
+        sc.close();
     }
 }

@@ -24,7 +24,7 @@ public class AreaOfRectangle{
         AreaOfRectangle a= new AreaOfRectangle();
         a.setDim(x,y);
         System.out.println("Area = "+a.getArea());
-
+        sc.close();
 
     }
 }

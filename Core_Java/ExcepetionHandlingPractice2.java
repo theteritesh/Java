@@ -2,7 +2,7 @@ public class ExcepetionHandlingPractice2 {
     public static void main(String[] args) {
         int i=4;
         int j=0;
-        String str=null;
+        String str="";
         int num[]=new int[5];
         try{
             j=10/i;
