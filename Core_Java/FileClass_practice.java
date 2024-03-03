@@ -26,6 +26,7 @@ public class FileClass_practice {
             while(br.ready()){
                 System.out.println(br.readLine());
             }
+            br.close();
         }catch(IOException e){
             System.out.println(e.getMessage());
         }
