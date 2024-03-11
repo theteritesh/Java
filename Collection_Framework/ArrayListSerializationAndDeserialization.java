@@ -22,6 +22,9 @@ public class ArrayListSerializationAndDeserialization {
             //Deserialization  
             FileInputStream fis=new FileInputStream("demo.txt");  
             ObjectInputStream ois=new ObjectInputStream(fis); 
+            fis.close();
+            ois.close();
+            @SuppressWarnings("rawtypes")
             ArrayList  list=(ArrayList)ois.readObject();  
             System.out.println(list);    
 
