@@ -4,7 +4,7 @@ public class TypeCasting{
         int a=b;
         System.out.println(a);
 
-        int a1=126;
+        int a1=127;
         byte b1=(byte)a1;
         System.out.println(b1);
 
