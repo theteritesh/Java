@@ -4,7 +4,7 @@ class A{
     }
     
 }
-class B{
+class B extends A{
     public void show2(){
         System.out.println("in B show");
     }
@@ -12,8 +12,8 @@ class B{
 public class TypeCastingPractice{
     public static void main(String[] args) {
 
-        B obj1 =new B();  //upcasting
-        obj1.show2();
+        A obj1 =new B();  //upcasting
+        obj1.show1();
 
         B obj2=(B)obj1; //downcasting
         obj2.show2();
