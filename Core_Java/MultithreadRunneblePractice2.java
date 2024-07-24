@@ -1,39 +1,41 @@
-// class First implements Runnable{
+// class A implements Runnable{
 //     public void run(){
-//         for (int i =0;i<=5;i++)
+//         for (int i=0;i<5;i++){
 //             System.out.println("hi");
-//             try {
-//                 Thread.sleep(10);
-//             } catch (InterruptedException e) {
-//                 e.printStackTrace();
-//             }
+//             try {Thread.sleep(10);}catch (Exception e) {System.out.println(e);}
+//         }
 //     }
 // }
-// class Second implements Runnable{
+// class B implements Runnable{
 //     public void run(){
-//         for (int i =0;i<=5;i++)
-//             System.out.println("hillo");
-//             try {
-//                 Thread.sleep(10);
-//             } catch (InterruptedException e) {
-//                 e.printStackTrace();
-//             }
+//         for (int i=0;i<5;i++){
+//             System.out.println("hellow");
+//             try {Thread.sleep(10);}catch (Exception e) {System.out.println(e);}
+//         }
 //     }
 // }
+
 public class MultithreadRunneblePractice2 {
     public static void main(String[] args) {
-        // Runnable obj1 = new First();
-        // Runnable obj2 = new Second();
-
         Runnable obj1=()->{
-            for (int i =0;i<=5;i++)
+            for (int i =0;i<=5;i++){
                 System.out.println("hi");
-                try {Thread.sleep(10);} catch (InterruptedException e) {e.printStackTrace();}
+                try {
+                    Thread.sleep(10);
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+            }
         };
         Runnable obj2=()->{
-            for (int i =0;i<=5;i++)
-                System.out.println("hillo");
-                try {Thread.sleep(10);} catch (InterruptedException e) {e.printStackTrace();}
+            for (int i =0;i<=5;i++){
+                System.out.println("hellow");
+                try {
+                    Thread.sleep(10);
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+            }
         };
 
         Thread t1Thread=new Thread(obj1);
@@ -44,3 +46,5 @@ public class MultithreadRunneblePractice2 {
         
     }
 }
+    
+    
